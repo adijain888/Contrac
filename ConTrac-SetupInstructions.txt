@@ -1,0 +1,31 @@
+Dear Judges,
+Hope you are having a great day!
+Thank you for reviewing our project and we hope you like it.
+Thank You,
+Project Name: Contrac
+
+
+Instructions:
+Please download all files in the Contarc file folder to fully experience our UI. All files under Assets, CSS and data folders are required. You will need a mysql server and a webserver. Start with home-page.html to begin testing our web application. Navigate to Tag Locations -> Tag Locations menu and tag a location. Next go to Review Location -> Retail Space and enter the city name for the location you tagged. You should see all results for that location.
+
+How to setup the database:
+Please set up a database named 'hack', set up username and password as 'root' and run the query below to setup the table.
+
+CREATE TABLE `tagdetails` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `streetnumber` varchar(30) DEFAULT NULL,
+  `streetname` varchar(30) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `state` varchar(2) DEFAULT NULL,
+  `zipcode` varchar(10) DEFAULT NULL,
+  `country` varchar(20) DEFAULT NULL,
+  `question1` tinyint(1) DEFAULT NULL,
+  `question2` tinyint(1) DEFAULT NULL,
+  `question3` tinyint(1) DEFAULT NULL,
+  `comments` varchar(100) DEFAULT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=64 DEFAULT CHARSET=utf8
+
+ 
+
